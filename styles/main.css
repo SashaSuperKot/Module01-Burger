@@ -146,22 +146,22 @@ margin-bottom: 18px;
     margin: 0 auto;
 }
 .banner-box {
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/burger.jpg);
     background-size: cover;
-    background-position: center center;
+    background-position: 0 center;
     color: #FFFFFF;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 100px 727px 100px 100px;
-    margin-bottom: 100px;
+    padding: 100px 100px 100px;
+    margin-bottom: 80px;
 }
 .banner-title {
     color: #FFFFFF;
     font-weight: 900;
     font-size: 60px;
-    margin-bottom: 0px;
     line-height: 1.4;
+    margin: 0;
 }
 .banner-text {
     font-family: 'Open Sans', sans-serif;
@@ -184,10 +184,14 @@ margin-bottom: 18px;
     height: 58px;
     border: 1px solid #FBB731;
     border-radius: 5px;
+    transition: 0.3s;
 }
 .banner-link:hover {
     background-color: transparent;
     color:#FBB731;
+}
+.menu{
+    padding-top: 20px;
 }
 .banner-title span {
     background-color: #F37335;
@@ -225,12 +229,14 @@ margin-bottom: 18px;
     text-transform: uppercase;
     border: 1px solid #FBB731; 
 }
+.menu {
+padding-top: 20px;
+}
 .menu-header {
     display: flex;
     align-items:center;
     justify-content: space-between;
     padding-bottom: 34px;
-    padding-top: 100px
 }
 .menu-title {
     font-size: 44px;
@@ -390,7 +396,32 @@ margin-bottom: 18px;
     padding-left: 0;
     list-style-type: none;
 }
+.button-up {
+    background-color: #FBB731;
+    color: #1E2F40;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.button-up:hover {
+    background-color: #F37335;
+    cursor: pointer;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
 /* Styel INDEX*/
+
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
 }
@@ -512,4 +543,39 @@ margin-top: 0;
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .container{
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background: position -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px 10px;
+    }
+    .footer-list-tel a {
+        font-size: 19px;
+}
+.footer-item h2 {
+    font-size: 19px;
 }

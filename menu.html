@@ -39,11 +39,11 @@
         </div>
     </header>
     <div class="bg">
-<div class="container">
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Меню</a></li>
-    </ul>
+        <div class="container">
+        <ul class="breadcrumbs">
+         <li><a href="index.html">Главная</a></li>
+         <li><a href="#">Меню</a></li>
+        </ul>
     <h1 class="title">Наше Меню</h1>
     <p class="description">Выбирай из предложенного ассортимента и мы доставим блюдо в течении часа</p>
 </div>
@@ -57,7 +57,7 @@
                         -30%
                     </h2>
                     <p class="banner-text">
-                        Только при&nbsp; покупке 3-х и более &nbsp;позиций,&nbsp; &nbsp;мы&nbsp;дарим &nbsp;скидку.&nbsp;Акции&nbsp; не&nbsp;
+                        Только при&nbsp; покупке 3-х и более &nbsp;позиций,&nbsp; мы дарим скидку.&nbsp;Акции&nbsp; не&nbsp;
                         суммируются.
                     </p>
                     <a href="#menuBurger" class="banner-link">купить сейчас</a>
@@ -235,5 +235,49 @@
                 </div>
             </div>
             </div>
+            </footer>
+            <a href="headerTop" class="button-up hidden" id="btnUp">Наверх</a>
+            <script>
+                    const links = document.querySelectorAll(".banner-link");
+
+                    for (const link of links) {
+                    link.addEventListener("click", clickHandler);
+                    }
+
+                    function clickHandler(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute("href");
+
+                    document.querySelector(href).scrollIntoView({
+                        behavior: "smooth"
+                    });
+                    }
+                    // Button Up
+
+       window.onscroll = function(){scrollFunction()};
+
+const upbuttons = document.querySelectorAll(".button-up");
+
+for (const upbutton of upbuttons) {
+    upbutton.addEventListener("click", clickHandler);
+}
+
+function clickHandler(e) {
+e.preventDefault();
+const href = this.getAttribute("href");
+
+document.querySelector(href).scrollIntoView({
+    behavior: "smooth"
+});
+}
+
+function scrollFunction(){
+    if ( document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000){
+        document.getElementById('btnUp').className = 'button-up visible';
+    } else {
+        document.getElementById('btnUp').className = 'button-up hidden';
+    }
+}
+            </script>
         </body>
         </html>
