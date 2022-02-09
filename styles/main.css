@@ -137,7 +137,7 @@ font-size: 79px;
 margin-top: 18px;
 margin-bottom: 18px;
 }
-.promo-description {
+.description {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.6;
@@ -207,13 +207,6 @@ margin-bottom: 18px;
     display: block;
     margin-bottom: 9px;
 }
-.banner-box p {
-    font-family: 'Open Sans', sans-serif;
-    max-width: 307px;
-    font-size: 15px;
-    color: #FAF9F9;
-    line-height: 1.6;
-}
 .banner-box a {
     font-weight: bold;
     font-size: 14px;
@@ -259,6 +252,7 @@ padding-top: 20px;
     background-size: 17.79px 7.75px;
     background-repeat: no-repeat;
     background-position: 89% center;
+    background-color: #FFFFFF;
 }
 .menu-grid {
     display: grid;
