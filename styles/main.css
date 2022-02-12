@@ -541,7 +541,44 @@ margin-top: 0;
     margin-bottom: 10px;
     margin-top: 0;
 }
+/* Modal */
 
+#modal {
+    max-width: 500px;
+    background-color: #FFF8DC;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: -400px;
+    margin: 20px auto 0;
+    transition: 0.5s;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+.burger {
+    width: 34px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+.burger-close {
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    background-image: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 /* Responsible*/
 @media (min-width: 1001px)
 {
