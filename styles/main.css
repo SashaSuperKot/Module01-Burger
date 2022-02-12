@@ -309,12 +309,13 @@ padding-top: 20px;
     cursor: pointer;
 }
 .menu-grid-icon {
-    background-image: url(../images/cart_menu.svg);
+    background-image: url(../images/cart.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 18px;
     height: 18px;
     display: block;
+}
 }
 .menu-grid-text {
     color: #1E2F40;
